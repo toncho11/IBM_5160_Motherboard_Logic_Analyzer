@@ -21,16 +21,16 @@ Configuration:
 Results:
 The Simple Parallel plugin outputs these bytes for pins Q4 - Q7
 The result looks like this:
-name	type	start_time	duration	data
-- Simple Parallel	data	2.14607929	0.220641333	    0x0
-- Simple Parallel	data	2.36672067	7.91666666e-07	0xE
-- Simple Parallel	data	2.3667215	  7.91666666e-07	0x5
-- Simple Parallel	data	2.36672233	7.91666667e-07	0xE
-- Simple Parallel	data	2.36672317	8.33333334e-07	0x0
-- Simple Parallel	data	2.36672404	7.91666667e-07	0xF
-- Simple Parallel	data	2.36672488	1.625e-06	      0x3
-- Simple Parallel	data	2.36672654	7.91666667e-07	0xF
-- Simple Parallel	data	2.36672737	7.91666667e-07	0xB
+
+- Simple Parallel	data 0x0
+- Simple Parallel	data 0xE
+- Simple Parallel	data 0x5
+- Simple Parallel	data 0xE
+- Simple Parallel	data 0x0
+- Simple Parallel	data 0xF
+- Simple Parallel	data 0x3
+- Simple Parallel	data 0xF
+- Simple Parallel	data 0xB
 
 ### Versions:
 - Logic 2.3.16
