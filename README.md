@@ -19,8 +19,7 @@ Configuration:
 - In the simple parallel port plug-in the /OE is used as "clock" with clock state "Rising Edge".
 
 Results:
-The Simple Parallel plugin outputs these bytes for pins Q4 - Q7
-The result looks like this:
+The Simple Parallel plugin outputs these bytes for pins Q4 - Q7. The result looks like this (these are only Q4-Q7):
 
 - Simple Parallel	data 0x0
 - Simple Parallel	data 0xE
