@@ -7,7 +7,7 @@ The data has been recorded with an AZ-Delivery Logic Analyzer. It is a cheap clo
 - you need to make the recordings of the same pins used in my own recordings
 - compare the results with your working or faulty motherboard
 
-It is known what the BIOS chip is supposed to output once the computer is powered on. The analyzer(or plugin) "Simple Parallel" is used. This plugin requires a "clock" even if in theory one is not needed. Every componenent has the "clock" configured to a pin that usually chnages when the IC outputs data. Sucha pin is not called "clock", but it does the job. 
+It is known what the BIOS chip is supposed to output once the computer is powered on. The analyzer(or plugin) "Simple Parallel" is used. This plugin requires a "clock" even if in theory one is not needed.
 
 ### BIOS U18
 
