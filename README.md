@@ -31,6 +31,12 @@ The Simple Parallel plugin outputs these bytes for pins Q4 - Q7. The result look
 - Simple Parallel	data 0xF
 - Simple Parallel	data 0xB
 
+### Pins S0, S1, S2 on CPU 8088 
+5 pins are read.
+
 ### Versions:
 - Logic 2.3.16
-- IBM motherboard 256-640 KB 
+- IBM motherboard 256-640 KB, 1983 - 1986
+
+### Resources:
+Info about 8088: https://www.geeksforgeeks.org/pin-diagram-8086-microprocessor/
