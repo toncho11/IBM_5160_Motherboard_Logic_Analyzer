@@ -1,22 +1,20 @@
-This project provides readings from several ICs from an IBM 5160 motherboard. The information here is to be useed for diagnostics. It allows you to compare to a working 5160 motherboards and hopefully narrow down the IC that is causing the problem.
+This repository provides readings from several ICs from an IBM 5160 motherboard. The information here is to be useed for diagnostics. It allows you to compare to a working 5160 motherboard and hopefully narrow down the IC that is causing your problem.
 
-The data has been recorded with an AZ-Delivery Logic Analyzer. It is a cheap clonning of the Saleae Logic Analyser. How it works:
+The data has been recorded with an AZ-Delivery Logic Analyzer. It is a cheap cloning of the Saleae Logic Analyser. How it works:
 
 - youn need to have an 8/16 bit clonning of Saleae
 - you need to download the Logic 2 software from Saleae
 - you need to make the recordings of the same pins used in my own recordings
-- compare the results with your working or faulty motherboard
+- compare your recordings with the ones prvoided here 
 
-It is known what the BIOS chip is supposed to output once the computer is powered on. The analyzer(or plugin) "Simple Parallel" is used. This plugin requires a "clock" even if in theory one is not needed.
 
 ### BIOS U18
 
-Only 4 pins are recorded instead of all the 8 pins.
+The U18 BIOS chip will output the BIOS code once the computer is powered on. Actaully the CPU is reading the BIOS code. The analyzer(or plugin) "Simple Parallel" is used to decode the output of U18. This plugin requires a "clock" even if in theory one is not needed. Only 4 pins are recorded instead of all the 8 pins.
 
 Configuration:
 - The tested PINS are: CPU reset, /OE, Q4, Q5, Q6, Q7 (named also D4, D5 ...)
-- Logic analyzer D0 pin -> Q7 ROM pin, D2 -> Q6, D4 -> Q5, D6 -> Q4, 1 ground is connected to ROM pin 14
-- In the simple parallel port plug-in the pins are ordered : Q4, Q5, Q6, Q7
+- In the simple parallel port plug-in the pins are ordered : Q4, Q5, Q6, Q7 (this is needed for the value reconstriction)
 - In the simple parallel port plug-in the /OE is used as "clock" with clock state "Rising Edge".
 
 Results:
@@ -31,6 +29,8 @@ The Simple Parallel plugin outputs these bytes for pins Q4 - Q7. The result look
 - Simple Parallel	data 0x3
 - Simple Parallel	data 0xF
 - Simple Parallel	data 0xB
+
+It is important if you are reading Q4-Q7 or Q7-Q4. 
 
 ### Pins S0, S1, S2 on CPU 8088 
 5 pins are read.
