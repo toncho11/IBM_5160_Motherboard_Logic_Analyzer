@@ -10,7 +10,7 @@ The data has been recorded with an AZ-Delivery Logic Analyzer. It is a cheap clo
 
 ### BIOS U18
 
-The U18 BIOS chip will output the BIOS code once the computer is powered on. Actaully the CPU is reading the BIOS code. The analyzer(or plugin) "Simple Parallel" is used to decode the output of U18. This plugin requires a "clock" even if in theory one is not needed. Only 4 pins are recorded instead of all the 8 pins.
+The U18 BIOS chip will output the BIOS code once the computer is powered on. Actaully the CPU is reading the BIOS code. The analyzer(or plugin) "Simple Parallel" is used to decode the output of U18. This plugin requires a "clock" even if in theory one is not needed. Only 4 pins are recorded instead of all the 8 pins (Q0-Q7).
 
 Configuration:
 - The tested PINS are: CPU reset, /OE, Q4, Q5, Q6, Q7 (named also D4, D5 ...)
