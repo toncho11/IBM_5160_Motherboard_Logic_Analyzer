@@ -39,4 +39,5 @@ The Simple Parallel plugin outputs these bytes for pins Q4 - Q7. The result look
 - IBM motherboard 256-640 KB, 1983 - 1986
 
 ### Resources:
+Saleae forum: https://discuss.saleae.com/
 Info about 8088: https://www.geeksforgeeks.org/pin-diagram-8086-microprocessor/
