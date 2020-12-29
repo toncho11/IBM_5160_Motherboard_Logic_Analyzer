@@ -36,7 +36,7 @@ The Simple Parallel plugin outputs these bytes for pins Q4 - Q7. The result look
 5 pins are read.
 
 ### Versions:
-- Logic 2.3.16
+- Logic 2.3.15
 - IBM motherboard 256-640 KB, 1983 - 1986
 
 ### Resources:
