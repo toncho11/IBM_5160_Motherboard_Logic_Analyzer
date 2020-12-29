@@ -41,5 +41,5 @@ It is important if you are reading Q4-Q7 or Q7-Q4.
 
 ### Resources:
 - IBM 5160 motherboard diagrams: https://ibm.retropc.se/5160/misc/5160_motherboard_diagrams.html
-- Saleae forum: https://discuss.saleae.com/
-- Info about 8088: https://www.geeksforgeeks.org/pin-diagram-8086-microprocessor/
+- Saleae forum: https://discuss.saleae.com
+- Info about 8088: https://www.geeksforgeeks.org/pin-diagram-8086-microprocessor
