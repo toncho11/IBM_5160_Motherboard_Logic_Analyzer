@@ -36,9 +36,10 @@ The Simple Parallel plugin outputs these bytes for pins Q4 - Q7. The result look
 5 pins are read.
 
 ### Versions:
-- Logic 2.3.16
+- Logic 2.3.15
 - IBM motherboard 256-640 KB, 1983 - 1986
 
 ### Resources:
-Saleae forum: https://discuss.saleae.com/
-Info about 8088: https://www.geeksforgeeks.org/pin-diagram-8086-microprocessor/
+- IBM 5160 motherboard diagrams: https://ibm.retropc.se/5160/misc/5160_motherboard_diagrams.html
+- Saleae forum: https://discuss.saleae.com/
+- Info about 8088: https://www.geeksforgeeks.org/pin-diagram-8086-microprocessor/
