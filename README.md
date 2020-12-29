@@ -15,7 +15,7 @@ Only 4 pins are recorded instead of all the 8 pins.
 
 Configuration:
 - The tested PINS are: CPU reset, /OE, Q4, Q5, Q6, Q7 (named also D4, D5 ...)
-- Logic analyzer D0 pin -> Q7 ROM pin, D2 -> Q6, D4 -> Q5, D6 -> Q4 
+- Logic analyzer D0 pin -> Q7 ROM pin, D2 -> Q6, D4 -> Q5, D6 -> Q4, 1 ground is connected to ROM pin 14
 - In the simple parallel port plug-in the pins are ordered : Q4, Q5, Q6, Q7
 - In the simple parallel port plug-in the /OE is used as "clock" with clock state "Rising Edge".
 
