@@ -41,7 +41,7 @@ It is important if you are reading Q4-Q7 or Q7-Q4.
 
 ### Resources:
 - IBM 5160 motherboard diagrams: https://ibm.retropc.se/5160/misc/5160_motherboard_diagrams.html
-- IBM 5160 start-up sequence
+- IBM 5160 start-up sequence: http://minuszerodegrees.net/5160/motherboard/IBM%205160%20-%20Startup%20sequence.htm
 - IBM 5160 POST process: http://minuszerodegrees.net/5160/post/5160%20-%20POST%20-%20Detailed%20breakdown.htm
 - Saleae forum: https://discuss.saleae.com
 - Info about 8088: https://www.geeksforgeeks.org/pin-diagram-8086-microprocessor
