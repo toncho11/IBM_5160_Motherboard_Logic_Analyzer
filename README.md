@@ -33,7 +33,7 @@ The Simple Parallel plugin outputs these bytes for pins Q4 - Q7. The result look
 It is important if you are reading Q4-Q7 or Q7-Q4. 
 
 ### Pins S0, S1, S2 on CPU 8088 
-5 pins are read.
+5 pins are read. The 8088 CPU is always in 'maximum' mode meaning that pin 25 is always "S0" and never used as "DEN" pin (see CPU schematics for reference).
 
 The S0,S1,S2 pins represent the following states:
 
@@ -47,7 +47,7 @@ S2 S1 S0 Machine cycle
 1 1 0 Write memory
 1 1 1 Passive
 
-8088 starts a 'Code Access' bus transaction (1,0,0) so only S2 is HIGH, the others are LOW. 
+In the beginning 8088 starts a 'Code Access' bus transaction (1,0,0) to access the BIOS ROM, so only S2 is HIGH, the others are LOW. 
 
 ### Versions:
 - Logic 2.3.15
