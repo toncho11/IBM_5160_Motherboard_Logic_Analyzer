@@ -35,6 +35,20 @@ It is important if you are reading Q4-Q7 or Q7-Q4.
 ### Pins S0, S1, S2 on CPU 8088 
 5 pins are read.
 
+The S0,S1,S2 pins represent the following states:
+
+S2 S1 S0 Machine cycle
+0 0 0 Interrupt acknowledge
+0 0 1 Read I/O port
+0 1 0 Write I/O port
+0 1 1 Halt
+1 0 0 Code access
+1 0 1 Read memory
+1 1 0 Write memory
+1 1 1 Passive
+
+8088 starts a 'Code Access' bus transaction (1,0,0) so only S2 is HIGH, the others are LOW. 
+
 ### Versions:
 - Logic 2.3.15
 - IBM motherboard 256-640 KB, 1983 - 1986
