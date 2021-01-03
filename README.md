@@ -62,3 +62,4 @@ In the beginning 8088 starts a 'Code Access' bus transaction (1,0,0) to access t
 - IBM 5160 switches: http://www.minuszerodegrees.net/5160/misc/5160_motherboard_switch_settings.htm
 - IBM 5160 RAM on a '64 - 256KB' Type of Motherboard: http://minuszerodegrees.net/5160/ram/5160_ram_64_256.htm
 - IBM 5160 RAM on a '256 - 640KB' Type of Motherboard: http://www.minuszerodegrees.net/5160/ram/5160_ram_256_640.htm
+- IBM 5160 checkpoints codes: http://www.minuszerodegrees.net/5160/post/5160_post_checkpoint_codes.htm
