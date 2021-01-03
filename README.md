@@ -51,7 +51,7 @@ In the beginning 8088 starts a 'Code Access' bus transaction (1,0,0) to access t
 
 ### Checkpoint codes on 8255A
 
-The IBM 5160 outputs 4 diagnostic codes (3 if everything is OK). The values are "001", "010", "011" and "100". These can be read on the 8255A on the following pins 4, 3, 2 in this direction with names PA0, PA1, PA2. If "100" is shown repeatedly it means a memory error in the first 16 KB (or 64 KB) of memory.
+The IBM 5160 outputs 4 diagnostic codes (3 if everything is OK). The values are "001", "010", "011" and "100". These can be read on the 8255A on the following pins 2, 3, 4 in that direction with names PA2, PA1, PA0. If "100" is shown repeatedly it means a memory error in the first 16 KB (or 64 KB) of memory. The initial state of the 3 pins is first all HIGH and then all LOW.
 
 ### Versions:
 - Logic 2.3.15
