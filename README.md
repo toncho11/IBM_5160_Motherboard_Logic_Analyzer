@@ -49,6 +49,10 @@ S2 S1 S0 Machine cycle
 
 In the beginning 8088 starts a 'Code Access' bus transaction (1,0,0) to access the BIOS ROM, so only S2 is HIGH, the others are LOW. 
 
+### Checkpoint codes on 8255A
+
+The IBM 5160 outputs 4 diagnostic codes (3 if everything is OK). The values are "001", "010", "011" and "100". These can be read on the 8255A on the following pins 4, 3, 2 in this direction with names PA0, PA1, PA2. If "100" is shown repeatedly it means a memory error in the first 16 KB (or 64 KB) of memory.
+
 ### Versions:
 - Logic 2.3.15
 - IBM motherboard 256-640 KB, 1983 - 1986
