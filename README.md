@@ -2,8 +2,8 @@ This repository provides readings from several ICs from an IBM 5160 motherboard.
 
 The data has been recorded with an AZ-Delivery Logic Analyzer. It is a [cheap cloning](https://chinese-electronics-products-tested.blogspot.com/p/24m-8ch-logical-analyser-tested.html) of the Saleae Logic Analyser. The clonning should have a 24MS/s sampling rate. How to proceed:
 
-- youn need to have an 8/16 bit clonning of Saleae
-- you need to download the Logic 2 software from Saleae
+- youn need to have an 8/16 bit clonning of [Saleae](https://www.saleae.com/downloads/)
+- you need to download the Logic 2 software from [Saleae](https://www.saleae.com/downloads/)
 - you need to make the recordings on the same pins for each IC as used in my own recordings
 - compare your recordings with the ones prvoided here 
 
