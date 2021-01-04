@@ -1,11 +1,13 @@
-This repository provides readings from several ICs from an IBM 5160 motherboard. The information here is to be used for diagnostics in the case where the IBM 5160 motherboard appears to be "dead". It allows you to compare to a working 5160 motherboard and hopefully narrow down the IC that is causing your problem. This repository also contains images and links from http://minuszerodegrees.net. These were stored here for quick reference and backup.
+This repository provides readings from several ICs from an IBM 5160 motherboard. The information here is to be used for diagnostics in the case where the IBM 5160 motherboard appears to be "dead". It allows you to compare to a working 5160 motherboard and hopefully narrow down the IC that is causing your problem. This repository also contains datasheets and diagrams of IBM 5160 collected from the Internet.
 
-The data has been recorded with an AZ-Delivery Logic Analyzer. It is a [cheap cloning](https://chinese-electronics-products-tested.blogspot.com/p/24m-8ch-logical-analyser-tested.html) of the Saleae Logic Analyser. The clonning should have a 24MS/s sampling rate. How to proceed:
+The data has been recorded with an AZ-Delivery Logic Analyzer. It is a [cheap cloning](https://chinese-electronics-products-tested.blogspot.com/p/24m-8ch-logical-analyser-tested.html) of the Saleae Logic Analyser. The device has a 24MS/s sampling rate. 
 
-- youn need to have an 8/16 bit clonning of Saleae
-- you need to download the Logic 2 software from Saleae
-- you need to make the recordings on the same pins for each IC as used in my own recordings
-- compare your recordings with the ones prvoided here 
+How to proceed:
+
+- youn need to have an 8/16 bit [Saleae](https://www.saleae.com) device or a compatible clonning
+- you need to download the Logic 2 software from [Saleae](https://www.saleae.com/downloads/)
+- you need to make the recordings (also called "captures") on the same pins for each IC as used in my own recordings
+- compare your recordings with the ones provided here 
 
 
 ### BIOS U18 MK38000 series
@@ -51,7 +53,7 @@ In the beginning 8088 starts a 'Code Access' bus transaction (1,0,0) to read the
 
 ### Checkpoint codes on 8255A
 
-The IBM 5160 outputs 4 diagnostic codes (3 if everything is OK). The values are "001", "010", "011" and "100". These can be read on the 8255A on the following pins 2, 3, 4 in that direction with names PA2, PA1, PA0. If "100" is shown repeatedly it means a memory error in the first 16 KB (or 64 KB) of memory. The initial state of the 3 pins is first all HIGH and then all LOW.
+The IBM 5160 outputs [4 diagnostic codes](http://www.minuszerodegrees.net/5160/post/5160_post_checkpoint_codes.htm) (3 if everything is OK). The values are "001", "010", "011" and "100". These can be read on the 8255A on the following pins 2, 3, 4 in that direction with names PA2, PA1, PA0. If "100" is shown repeatedly it means a memory error in the first 16 KB (or 64 KB) of memory. The initial state of the 3 pins is first all HIGH and then all LOW.
 
 ### Versions:
 - Logic 2.3.15
@@ -69,4 +71,4 @@ The IBM 5160 outputs 4 diagnostic codes (3 if everything is OK). The values are 
 - IBM 5160 checkpoints codes: http://www.minuszerodegrees.net/5160/post/5160_post_checkpoint_codes.htm
 
 ### Extra notes:
-- when using the 'Simple Psarallel' in Logic 2 your computer might become overloaded. Use: start /affinity 4 C:\Progra~1\Logic\Logic.exe to limit the resouces used by Logic 2.
+- when using the 'Simple Parallel' in Logic 2 your computer might become overloaded. Use: start /affinity 4 C:\Progra~1\Logic\Logic.exe to limit the resouces used by Logic 2.
