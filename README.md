@@ -1,6 +1,6 @@
-This repository provides readings from several ICs from an IBM 5160 motherboard. The information here is to be useed for diagnostics. It allows you to compare to a working 5160 motherboard and hopefully narrow down the IC that is causing your problem. This repository also contains images and links from http://minuszerodegrees.net. These were stored here for quick reference and backup.
+This repository provides readings from several ICs from an IBM 5160 motherboard. The information here is to be used for diagnostics. It allows you to compare to a working 5160 motherboard and hopefully narrow down the IC that is causing your problem. This repository also contains images and links from http://minuszerodegrees.net. These were stored here for quick reference and backup.
 
-The data has been recorded with an AZ-Delivery Logic Analyzer. It is a cheap cloning of the Saleae Logic Analyser. How it works:
+The data has been recorded with an AZ-Delivery Logic Analyzer. It is a [cheap cloning](https://chinese-electronics-products-tested.blogspot.com/p/24m-8ch-logical-analyser-tested.html) of the Saleae Logic Analyser. How it works:
 
 - youn need to have an 8/16 bit clonning of Saleae
 - you need to download the Logic 2 software from Saleae
