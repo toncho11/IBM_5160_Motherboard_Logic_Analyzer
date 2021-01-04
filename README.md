@@ -1,6 +1,8 @@
 This repository provides readings from several ICs from an IBM 5160 motherboard. The information here is to be used for diagnostics in the case where the IBM 5160 motherboard appears to be "dead". It allows you to compare to a working 5160 motherboard and hopefully narrow down the IC that is causing your problem. This repository also contains datasheets and diagrams of IBM 5160 collected from the Internet.
 
-The data has been recorded with an AZ-Delivery Logic Analyzer. It is a [cheap cloning](https://chinese-electronics-products-tested.blogspot.com/p/24m-8ch-logical-analyser-tested.html) of the Saleae Logic Analyser. The clonning should have a 24MS/s sampling rate. How to proceed:
+The data has been recorded with an AZ-Delivery Logic Analyzer. It is a [cheap cloning](https://chinese-electronics-products-tested.blogspot.com/p/24m-8ch-logical-analyser-tested.html) of the Saleae Logic Analyser. The device has a 24MS/s sampling rate. 
+
+How to proceed:
 
 - youn need to have an 8/16 bit clonning of [Saleae](https://www.saleae.com/downloads/)
 - you need to download the Logic 2 software from [Saleae](https://www.saleae.com/downloads/)
