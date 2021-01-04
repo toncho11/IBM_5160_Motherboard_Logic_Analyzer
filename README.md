@@ -1,4 +1,4 @@
-This repository provides readings from several ICs from an IBM 5160 motherboard. The information here is to be useed for diagnostics. It allows you to compare to a working 5160 motherboard and hopefully narrow down the IC that is causing your problem.
+This repository provides readings from several ICs from an IBM 5160 motherboard. The information here is to be useed for diagnostics. It allows you to compare to a working 5160 motherboard and hopefully narrow down the IC that is causing your problem. This repository also contains images and links from http://minuszerodegrees.net. These were stored here for quick reference and backup.
 
 The data has been recorded with an AZ-Delivery Logic Analyzer. It is a cheap cloning of the Saleae Logic Analyser. How it works:
 
@@ -32,7 +32,7 @@ The Simple Parallel plugin outputs these bytes for pins Q4 - Q7. The result look
 
 It is important if you are reading Q4-Q7 or Q7-Q4. 
 
-### Pins S0, S1, S2 on CPU 8088 
+### Pins S0, S1, S2 on 8088 CPU
 5 pins are read. The 8088 CPU is always in 'maximum' mode meaning that pin 25 is always "S0" and never used as "DEN" pin (see CPU schematics for reference).
 
 The S0,S1,S2 pins represent the following states:
@@ -47,7 +47,7 @@ S2 S1 S0 Machine cycle
 1 1 0 Write memory
 1 1 1 Passive
 
-In the beginning 8088 starts a 'Code Access' bus transaction (1,0,0) to access the BIOS ROM, so only S2 is HIGH, the others are LOW. 
+In the beginning 8088 starts a 'Code Access' bus transaction (1,0,0) to read the BIOS ROM U18, so only S2 is HIGH, the others are LOW. 
 
 ### Checkpoint codes on 8255A
 
