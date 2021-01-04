@@ -6,8 +6,8 @@ How to proceed:
 
 - youn need to have an 8/16 bit [Saleae](https://www.saleae.com) device or a compatible clonning
 - you need to download the Logic 2 software from [Saleae](https://www.saleae.com/downloads/)
-- you need to make the recordings on the same pins for each IC as used in my own recordings
-- compare your recordings with the ones prvoided here 
+- you need to make the recordings (also called "captures") on the same pins for each IC as used in my own recordings
+- compare your recordings with the ones provided here 
 
 
 ### BIOS U18 MK38000 series
