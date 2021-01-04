@@ -8,9 +8,9 @@ The data has been recorded with an AZ-Delivery Logic Analyzer. It is a [cheap cl
 - compare your recordings with the ones prvoided here 
 
 
-### BIOS U18
+### BIOS U18 MK38000 series
 
-The U18 BIOS chip will output the BIOS code once the computer is powered on. Actaully the CPU is reading the BIOS code. The analyzer(or plugin) "Simple Parallel" is used to decode the output of U18. This plugin requires a "clock" even if in theory one is not needed. Only 4 pins are recorded instead of all the 8 pins (Q0-Q7).
+The U18 BIOS chip will output the BIOS code once the computer is powered on. Actaully the CPU is reading the BIOS code. The analyzer(or plugin) "Simple Parallel" inLogic 2 is used to decode the output of U18. This plugin requires a "clock" even if in theory one is not needed. Only 4 pins are recorded instead of all the 8 pins (Q0-Q7).
 
 Configuration:
 - The tested PINS are: CPU reset, /OE, Q4, Q5, Q6, Q7 (named also D4, D5 ...)
@@ -30,7 +30,7 @@ The Simple Parallel plugin outputs these bytes for pins Q4 - Q7. The result look
 - Simple Parallel	data 0xF
 - Simple Parallel	data 0xB
 
-It is important if you are reading Q4-Q7 or Q7-Q4. 
+It is important if you are reading Q4-Q7 or Q7-Q4 (configured in the Simple Parallel plugin).
 
 ### Pins S0, S1, S2 on 8088 CPU
 5 pins are read. The 8088 CPU is always in 'maximum' mode meaning that pin 25 is always "S0" and never used as "DEN" pin (see CPU schematics for reference).
