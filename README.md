@@ -69,4 +69,4 @@ The IBM 5160 outputs 4 diagnostic codes (3 if everything is OK). The values are 
 - IBM 5160 checkpoints codes: http://www.minuszerodegrees.net/5160/post/5160_post_checkpoint_codes.htm
 
 ### Extra notes:
-- when using the 'Simple Psarallel' in Logic 2 your computer might become overloaded. Use: start /affinity 4 C:\Progra~1\Logic\Logic.exe to limit the resouces used by Logic 2.
+- when using the 'Simple Parallel' in Logic 2 your computer might become overloaded. Use: start /affinity 4 C:\Progra~1\Logic\Logic.exe to limit the resouces used by Logic 2.
