@@ -4,7 +4,7 @@ The data has been recorded with an AZ-Delivery Logic Analyzer. It is a [cheap cl
 
 How to proceed:
 
-- youn need to have an 8/16 bit [Saleae](https://www.saleae.com) device or a compatible clonning
+- youn need to have a 8 or 16 channel [Saleae](https://www.saleae.com) device or a compatible clonning of Saleae
 - you need to download the Logic 2 software from [Saleae](https://www.saleae.com/downloads/)
 - you need to make the recordings (also called "captures") on the same pins for each IC as used in my own recordings
 - compare your recordings with the ones provided here 
