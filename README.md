@@ -23,7 +23,7 @@ The IBM 5160 outputs [4 diagnostic codes](http://www.minuszerodegrees.net/5160/p
 The initial state of the 3 pins is first all HIGH and then all LOW. Another way to see if the memory is to blame is to check channel #1 output pin 13 of the 8253 timer chip. This is the RAM refresh rate. It should have pulsing activity with a frequency of 66.31kHZ (period of 0.015 milliseconds) when all memory chips are working properly.
 ![image](https://github.com/toncho11/IBM_5160_Motherboard_Logic_Analyzer/blob/main/Images/IBM%205150-8253timer_chip.bmp?raw=true)
 
-This also means that the POST has well progressed, but it has stopped because of the faulty memory. More on detecting faulty memory can be found [here](http://minuszerodegrees.net/5160/ram/5160_ram_flaw_use_of_checkit.htm).
+This also means that the POST has well progressed, but it has stopped because of the faulty memory. More on detecting faulty memory can be found [here](http://minuszerodegrees.net/5160/ram/5160_ram_flaw_use_of_checkit.htm). A faulty chip can be located either by software or by using an external testing device. These devices are sold on ebay and are often based on Arduino.
 
 ### BIOS U18 MK38000 series
 
