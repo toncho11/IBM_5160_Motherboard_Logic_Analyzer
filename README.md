@@ -1,3 +1,10 @@
+When diagnosing a non-working IBM 5160 motherboard one can try several methods:
+
+- Use [Supersoft/Landmark Diagnostic ROM](http://www.minuszerodegrees.net/supersoft_landmark/Supersoft%20Landmark%20ROM.htm)
+- Measure certain ICs with an oscilloscope
+- Study the operation of certain ICs with a Logic Analyzer (this repository)
+- Run IBM's [diagnositc disks](https://winworldpc.com/product/ibm-pc-diagnostics/100)
+
 This repository provides recordings from several ICs from an IBM 5160 motherboard. The information here is to be used for diagnostics in the case where the IBM 5160 motherboard appears to be "dead". It allows you to compare to a working 5160 motherboard and hopefully narrow down the IC that is causing your problem. This repository also contains datasheets and diagrams of IBM 5160 collected from the Internet.
 
 The data has been recorded with an AZ-Delivery Logic Analyzer. It is a [cheap cloning](https://chinese-electronics-products-tested.blogspot.com/p/24m-8ch-logical-analyser-tested.html) of the Saleae Logic Analyser. The device has a 24MS/s sampling rate. 
