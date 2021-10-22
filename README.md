@@ -53,7 +53,9 @@ In the beginning 8088 starts a 'Code Access' bus transaction (1,0,0) to read the
 
 ### Checkpoint codes on 8255A
 
-The IBM 5160 outputs [4 diagnostic codes](http://www.minuszerodegrees.net/5160/post/5160_post_checkpoint_codes.htm) (3 if everything is OK). The values are "001", "010", "011" and "100". These can be read on the 8255A on the following pins 2, 3, 4 in that direction with names PA2, PA1, PA0. If "100" is shown repeatedly it means a memory error in the first 16 KB (or 64 KB) of memory. The initial state of the 3 pins is first all HIGH and then all LOW. Another way to see if the memory is to blame is to check channel #1 output pin 13 of the 8253 timer chip. This is the RAM refresh rate, in a normal working condition it should have pulsing activity with a frequency of 66.31kHZ (period of 0.015 milliseconds). This also means that the POST has well progressed, but it has stopped because of the faulty memory. More on detecting faulty memory can be found [here](http://minuszerodegrees.net/5160/ram/5160_ram_flaw_use_of_checkit.htm).
+The IBM 5160 outputs [4 diagnostic codes](http://www.minuszerodegrees.net/5160/post/5160_post_checkpoint_codes.htm) (3 if everything is OK). The values are "001", "010", "011" and "100". These can be read on the 8255A on the following pins 2, 3, 4 in that direction with names PA2, PA1, PA0. If "100" is shown repeatedly it means a memory error in the first 16 KB (or 64 KB) of memory. 
+~[image](https://github.com/toncho11/IBM_5160_Motherboard_Logic_Analyzer/blob/main/Images/IBM_5160_diagnostic_codes.png?raw=true)
+The initial state of the 3 pins is first all HIGH and then all LOW. Another way to see if the memory is to blame is to check channel #1 output pin 13 of the 8253 timer chip. This is the RAM refresh rate, in a normal working condition it should have pulsing activity with a frequency of 66.31kHZ (period of 0.015 milliseconds). This also means that the POST has well progressed, but it has stopped because of the faulty memory. More on detecting faulty memory can be found [here](http://minuszerodegrees.net/5160/ram/5160_ram_flaw_use_of_checkit.htm).
 
 ### Versions:
 - Logic 2.3.15
