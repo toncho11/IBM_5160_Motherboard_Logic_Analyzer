@@ -2,13 +2,21 @@ This repository provides recordings from several ICs from an IBM 5160 motherboar
 
 The data has been recorded with an AZ-Delivery Logic Analyzer. It is a [cheap cloning](https://chinese-electronics-products-tested.blogspot.com/p/24m-8ch-logical-analyser-tested.html) of the Saleae Logic Analyser. The device has a 24MS/s sampling rate. 
 
-How to proceed:
+How to do the diagnostics of the IBM 5160 motherboard:
 
 - youn need to have a 8 or 16 channel [Saleae](https://www.saleae.com) device or a compatible clonning of Saleae
 - you need to download the Logic 2 software from [Saleae](https://www.saleae.com/downloads/)
 - you need to make the recordings (also called "captures") on the same pins for each IC as used in my own recordings
 - compare your recordings with the ones provided here 
 
+### Checkpoint codes on 8255A
+
+The IBM 5160 outputs [4 diagnostic codes](http://www.minuszerodegrees.net/5160/post/5160_post_checkpoint_codes.htm) (3 if everything is OK). The values are "001", "010", "011" and "100". These can be read on the 8255A on the following pins 2, 3, 4 in that direction with names PA2, PA1, PA0. If "100" is shown repeatedly it means a memory error in the first 16 KB (or 64 KB) of memory. 
+![image](https://github.com/toncho11/IBM_5160_Motherboard_Logic_Analyzer/blob/main/Images/IBM_5160_diagnostic_codes.png?raw=true)
+The initial state of the 3 pins is first all HIGH and then all LOW. Another way to see if the memory is to blame is to check channel #1 output pin 13 of the 8253 timer chip. This is the RAM refresh rate, in a normal working condition it should have pulsing activity with a frequency of 66.31kHZ (period of 0.015 milliseconds).
+![image](https://github.com/toncho11/IBM_5160_Motherboard_Logic_Analyzer/blob/main/Images/IBM%205150-8253timer_chip.bmp?raw=true)
+
+This also means that the POST has well progressed, but it has stopped because of the faulty memory. More on detecting faulty memory can be found [here](http://minuszerodegrees.net/5160/ram/5160_ram_flaw_use_of_checkit.htm).
 
 ### BIOS U18 MK38000 series
 
@@ -50,15 +58,6 @@ S2 S1 S0 Machine cycle
 1 1 1 Passive
 
 In the beginning 8088 starts a 'Code Access' bus transaction (1,0,0) to read the BIOS ROM U18, so only S2 is HIGH, the others are LOW. 
-
-### Checkpoint codes on 8255A
-
-The IBM 5160 outputs [4 diagnostic codes](http://www.minuszerodegrees.net/5160/post/5160_post_checkpoint_codes.htm) (3 if everything is OK). The values are "001", "010", "011" and "100". These can be read on the 8255A on the following pins 2, 3, 4 in that direction with names PA2, PA1, PA0. If "100" is shown repeatedly it means a memory error in the first 16 KB (or 64 KB) of memory. 
-![image](https://github.com/toncho11/IBM_5160_Motherboard_Logic_Analyzer/blob/main/Images/IBM_5160_diagnostic_codes.png?raw=true)
-The initial state of the 3 pins is first all HIGH and then all LOW. Another way to see if the memory is to blame is to check channel #1 output pin 13 of the 8253 timer chip. This is the RAM refresh rate, in a normal working condition it should have pulsing activity with a frequency of 66.31kHZ (period of 0.015 milliseconds).
-![image](https://github.com/toncho11/IBM_5160_Motherboard_Logic_Analyzer/blob/main/Images/IBM%205150-8253timer_chip.bmp?raw=true)
-
-This also means that the POST has well progressed, but it has stopped because of the faulty memory. More on detecting faulty memory can be found [here](http://minuszerodegrees.net/5160/ram/5160_ram_flaw_use_of_checkit.htm).
 
 ### Versions:
 - Saleae's Logic 2.3.15
