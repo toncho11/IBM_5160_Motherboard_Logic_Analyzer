@@ -3,8 +3,8 @@ When diagnosing a non-working IBM 5160 motherboard one can try several methods:
 - Use [Supersoft/Landmark Diagnostic ROM](http://www.minuszerodegrees.net/supersoft_landmark/Supersoft%20Landmark%20ROM.htm)
 - Measure certain ICs with an oscilloscope
 - Study the operation of certain ICs with a Logic Analyzer (this repository)
-- Run IBM's [diagnositc disks](https://winworldpc.com/product/ibm-pc-diagnostics/100)
-- Run the motherboard BIOS/POST in 'Test Chamber' mode or 'Manufacturing Test' mode as explained [here](http://www.minuszerodegrees.net/5160/post/5160%20-%20POST%20-%20Test%20chamber%20and%20manufacturing%20test%20modes.htm)
+- Run the motherboard's BIOS/POST in 'Test Chamber' mode or 'Manufacturing Test' mode as explained [here](http://www.minuszerodegrees.net/5160/post/5160%20-%20POST%20-%20Test%20chamber%20and%20manufacturing%20test%20modes.htm)
+- Run IBM's [diagnositc disks](https://winworldpc.com/product/ibm-pc-diagnostics/100) (if the computer is able to boot)
 
 This repository provides recordings from several ICs from an IBM 5160 motherboard. The information here is to be used for diagnostics in the case where the IBM 5160 motherboard appears to be "dead". It allows you to compare to a working 5160 motherboard and hopefully narrow down the IC that is causing your problem. This repository also contains datasheets and diagrams of IBM 5160 collected from the Internet.
 
